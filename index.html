@@ -1,69 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weatherly</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Live</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <div class="main">
-        <div class="container">
-            <div class="primary">
-                <div class="locationsearch">
-                    <div class="location"><h3>London</h3></div>
-                    <div class="search">
-                        <input type="text" placeholder="Enter Location">
-                        <search></search>
-                        <button>Search</button>
-                    </div>
-                </div>
-                 <div class="tempraturebox">
-                    <div class="temprature"><h1>22'</h1></div>
-                    <div class="windpartition">
-                        <div class="wind">6 MPH</div>
-                       <div class="partition">90%</div>
-                </div>
-                </div>
-                <div class="weatherinfo">
-                    <h1>Cloudy</h1>
-                </div>
-                <div class="weakly">
-                    <div class="weak">
-                        <div class="day space">Today space</div>
-                        <div class="minitemp space">22'C</div>
-                        <div class="aboutweather space">Cloudy</div>
-                    </div>
-                    <div class="weak">
-                        <div class="day space">Sun</div>
-                        <div class="minitemp space">20'c</div>
-                        <div class="aboutweather space"></div>
-                    </div>
-                    <div class="weak">
-                        <div class="day space">Mon</div>
-                        <div class="minitemp space">22'C</div>
-                        <div class="aboutweather space"></div>
-                    </div>
-                    <div class="weak">
-                        <div class="day space">Tue</div>
-                        <div class="minitemp space"></div>
-                        <div class="aboutweather space"></div>
-                    </div>
-                    <div class="weak">
-                        <div class="day space">Wed</div>
-                        <div class="minitemp space"></div>
-                        <div class="aboutweather space"></div>
-                    </div>
-                    <div class="weak">
-                        <div class="day space">Thu</div>
-                        <div class="minitemp space"></div>
-                        <div class="aboutweather space"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="mainBox">
+          <div class="header">
+            <div class="location"></div>
+            <div class="input">
+              <input type="text" placeholder="Enter Location" />
+              <button>Search</button>
             </div>
-            <div class="secondary"></div>
+          </div>
+          <br />
+          <div class="tempBox">
+            <h1>0°</h1>
+          </div>
+          <div class="conditions">
+            <h1>Mist</h1>
+          </div>
+          <div class="weaklyBox">
+            <div class="day-box" id="hour1">
+              <div class="day">Time</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="hour2">
+              <div class="day">Time</div>
+              <div class="temp" id="temp2"></div>
+              <div class="condition" id="cond2">Mist</div>
+            </div>
+            <div class="day-box" id="hour3">
+              <div class="day">Time</div>
+              <div class="temp" id="temp3"></div>
+              <div class="condition" id="cond3">Mist</div>
+            </div>
+            <div class="day-box" id="hour4">
+              <div class="day">Time</div>
+              <div class="temp" id="temp4"></div>
+              <div class="condition" id="cond4">Mist</div>
+            </div>
+            <div class="day-box" id="hour5">
+              <div class="day">Time</div>
+              <div class="temp" id="temp5"></div>
+              <div class="condition" id="cond5">Mist</div>
+            </div>
+            <div class="day-box" id="hour6">
+              <div class="day">Time</div>
+              <div class="temp" id="temp6"></div>
+              <div class="condition" id="cond6">Mist</div>
+            </div>
+          </div>
         </div>
+        <br />
+        <div class="sideBox">
+          <div class="greeting">
+            <h3>Good Night</h3>
+            <p id="time">04:12 PM</p>
+          </div>
+          <div class="tempBox">
+            <div class="temprature">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="conditions">Cloudy</div>
+          <div class="weaklyBox">
+            <div class="day-box" id="day1">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="day2">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="day3">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="day4">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="day5">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+            <div class="day-box" id="day6">
+              <div class="day">Today</div>
+              <div class="temp" id="temp1"></div>
+              <div class="condition" id="cond1">Mist</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
