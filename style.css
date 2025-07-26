@@ -1,127 +1,195 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: black;
 }
 
 .main{
     width: 100vw;
     height: 100vh;
-    background-color: peachpuff;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #000; */
 }
 
 .container{
-    width: 70%;
-    height: 80%;
-    background: rgb(250, 250, 247);
+    width: 80%;
+    height: 90%;
+    backdrop-filter: blur(20px);
     border-radius: 20px;
+    /* box-shadow: 0px 1px 20px #a607f0;  */
     display: flex;
     overflow: hidden;
 }
 
-.primary{
-    height: 100%;
+.mainBox{
     width: 70%;
+    height: 100%;
+    backdrop-filter: blur(10px);
 }
 
-.locationsearch{
-    height: 70px;
+.header{
+    height: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .location{
-    width: 35%;
-    margin: 20px;
-    font-size: x-large;
+    font-size: xx-large;
+    font-weight: 900;
 }
 
-.search{
-    width: 60%;
-    display: flex;
-}
-
-.search input{
+.input{
     width: 70%;
+}
+
+.input input{
     height: 30px;
+    width: 60%;
     border-radius: 20px;
+    background-color: antiquewhite;
     border: none;
     padding: 5px;
+    font-size: x-large;
     font-weight: bold;
-    font-size: large;
-    background-color: rgb(204, 172, 172);
 }
 
-.search button{
-    width: 100px;
+.input button{
     height: 40px;
+    width: 100px;
     border-radius: 20px;
+    background-color: rgb(102, 69, 25);
+    color: #fff;
     border: none;
-    padding: 5px;
+    /* padding: 5px; */
+    font-size: x-large;
     font-weight: bold;
-    font-size: large;
-    position: relative;
-    right: 5px;
-    background-color: peachpuff;
 }
 
-.tempraturebox{
+.tempBox{
     width: 100%;
-    height: 200px;
-    display: flex;
-}
-
-.temprature{
-    width: 70%;
-    height: 100%;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 80px;
-    /* background-color: aquamarine; */
-}
-
-.temprature h1{
-    margin: 0px 60%;
-}
-
-.windpartition{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: blue; */
-}
-
-.weatherinfo{
-    width: 100%;
-    height: 100px;
-    font-size: 20px;
+    height: 20%;
     text-align: center;
 }
 
-.weakly{
-    width: 100%;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.tempBox h1{
+    font-size: 5rem;
 }
 
-.weak{
+.conditions h1{
+    height:15%;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.weaklyBox{
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+.day-box{
     width: 70px;
     height: 100px;
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid rgb(48, 28, 28);
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 900;
+    background-color: aquamarine;
+    box-shadow: 0px 0px 10px ;
 }
 
 
-.secondary{
-    height: 100%;
+.sideBox{
     width: 30%;
-    background-color: rgb(204, 172, 172);
+    height: 100%;
+}
+
+.sideBox .conditions{
+    text-align: center;
+    font-weight: 900;
+}
+
+.sideBox .greeting{
+    text-align: center;
+}
+
+.sideBox .weaklyBox{
+    height: auto;
+    min-height: 40%;
+    padding-top: 20px;
+}
+
+.sideBox .day-box{
+    margin: 5px;
+}
+
+@media (max-width:768px) {
+
+    .container{
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        overflow: auto;
+        border-radius: 0px;
+    }
+    .mainBox{
+        height: auto;
+        min-height: 100vh;
+    }
+    .header{
+        height: 15%;
+        flex-direction: column;
+    }
+    .input{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+    }
+    .input input{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .conditions{
+        height: 10%;
+    }
+    .mainBox{
+        width: 100%;
+    }
+    .weaklyBox{
+        height: auto;
+    }
+    
+    .day-box{
+        margin: 5px 30px;
+    }
+
+    .sideBox .day-box{
+    margin: 5px 30px;
+    }
+
+    .sideBox{
+        width: 100%;
+    }
 }
