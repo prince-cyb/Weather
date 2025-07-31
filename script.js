@@ -69,7 +69,7 @@ function updateCurrentWeather(data) {
 
     const bgMap = {
         clear: "url('https://media.istockphoto.com/id/1726364193/photo/blue-sky-background.jpg?s=1024x1024&w=is&k=20&c=XIpo-LiL0cvXZmK4GrzzWB1bcLaBpNhw0_BS6TmPkog=')",
-        cloud: "url('https://media.istockphoto.com/id/157527872/photo/storm-cloud.jpg?s=1024x1024&w=is&k=20&c=bX9T0wxwo4YUBXjBXOD76eER6jJ9H73i0M3-XFvMbno=')",
+        cloud: "url('https://upload.wikimedia.org/wikipedia/commons/7/73/Cloudy_sky_%2826171935906%29.jpg')",
         rain: "url('https://media.istockphoto.com/id/498063665/photo/rainy-landscape.jpg?s=1024x1024&w=is&k=20&c=JmmkAKBNVz2QC2YaXGl8lLvYQYrn6SYXt_FPtN-8JUc=')",
         default: "url('https://media.istockphoto.com/id/947314334/photo/blue-sky-with-bright-sun.jpg?s=612x612&w=0&k=20&c=XUlLAWDXBLYdTGIl6g_qHQ9IBBw4fBvkVuvL2dmVXQw=')"
     };
