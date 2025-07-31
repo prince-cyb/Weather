@@ -116,10 +116,11 @@ function updateDailyForecast(days) {
 document.querySelector("button").addEventListener("click", () => {
     const city = document.querySelector("input").value.trim();
     if (city) getWeather(city);
+    suggestionsBox.innerHTML = '';
 });
 
 window.onload = () => {
     updateTime();
     setInterval(updateTime, 1000);
-    getWeather("Patti");
+    getWeather("25.882470, 82.280726");
 };
